@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<html>
+
+    <body>
+        <div>
+            <h1>Welcome to Comic Sans OS!</h1>
+            <p>This is a test! :)</p>
+        </div>
+
+        <div2>
+            <pDiv0> Comic Sans OS </pDiv0> 
+            <pDiv1 id="timeElement"> Time </pDiv1>
+        </div2>
+
+        <script>
+            function updateTime()
+            {
+                var currentTime = new Date().toLocaleString();
+                var timeText = document.querySelector("#timeElement");
+                timeText.innerHTML = currentTime;
+            }
+            
+            setInterval(updateTime, 1000);
+        </script>
+    </body>
+
+</html>
